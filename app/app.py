@@ -45,6 +45,7 @@ def delete_app(app_id):
     return jsonify({'error': 'App not found'}), 404
 
 if __name__ == '__main__':
-    if not os.path.exists('apps.db'):
-        db.create_all()
+    with app.app_context():
+        if not os.path.exists('apps.db'):
+            db.create_all()
     app.run(debug=True)
