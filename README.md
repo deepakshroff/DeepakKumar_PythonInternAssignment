@@ -38,10 +38,9 @@ python android_simulator.py
 ```bash
 cd ../networking
 python device_to_server.py
-
+```
 
 📌 Note: apps.db is auto-generated when you run the app.
-```
 
 Enjoy exploring! 😄
 """
